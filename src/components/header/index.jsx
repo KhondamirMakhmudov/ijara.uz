@@ -9,7 +9,8 @@ const navLinks = [
   { href: "/", label: "Bosh sahifa" },
   { href: "#about-us", label: "Biz haqimizda" },
   // { href: "https://iqmath.uz/", label: "courses" },
-  { href: "#faq", label: "Вопросы и ответы" },
+  { href: "#faq", label: "Afzalliklar" },
+  { href: "#faq", label: "FAQ" },
   // { href: "/about-olympics", label: "Об олимпиаде" },
 ];
 
@@ -49,7 +50,13 @@ const Header = () => {
       </nav>
 
       <div>
-        <Button sx={{ textTransform: "initial" }}>
+        <Button
+          sx={{
+            textTransform: "initial",
+            border: "1px solid #407BFF",
+            padding: "8px 20px",
+          }}
+        >
           <Link href={"/login"}>
             <LoginOutlinedIcon sx={{ marginRight: "8px" }} />
             Ro&apos;yxatdan o&apos;tish

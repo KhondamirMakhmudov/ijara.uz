@@ -17,3 +17,62 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+svg#freepik_stories-house-searching:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-house-searching.animated
+  #freepik--background-complete--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+svg#freepik_stories-house-searching.animated #freepik--Character--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+svg#freepik_stories-house-searching.animated #freepik--Houses--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+  animation-delay: 0s;
+}
+svg#freepik_stories-house-searching.animated #freepik--speech-bubble--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut;
+  animation-delay: 0s;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
