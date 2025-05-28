@@ -14,6 +14,13 @@ import FamilyRestroomOutlinedIcon from "@mui/icons-material/FamilyRestroomOutlin
 import GroupIcon from "@mui/icons-material/Group";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import {
+  AttachMoneyOutlined,
+  HandshakeOutlined,
+  PostAddOutlined,
+  VerifiedUserOutlined,
+} from "@mui/icons-material";
+import List from "@/components/list";
 const MotionImage = motion(Image);
 
 export default function Home() {
@@ -257,9 +264,49 @@ export default function Home() {
           </div>
         </section>
 
+        <div className="w-full bg-[#407BFF] text-white text-center py-3 text-xl">
+          Ijara.uz — siz va uy egalari o‘rtasidagi ishonchli ko‘prik. Biz
+          vositachilik narxini emas, adolatli ijara madaniyatini targ‘ib
+          qilamiz.
+        </div>
+
         <section className="grid grid-cols-12 gap-4 py-[50px]">
           <div className="col-span-12">
             <Title>Afzalliklar</Title>
+
+            <div className="my-[40px] space-y-[12px]">
+              <List
+                icon={<HandshakeOutlined fontSize="large" />}
+                title={"Reiltorsiz — to‘g‘ridan-to‘g‘ri bog‘lanish"}
+                desc={
+                  "Oraliq xizmatlar yo‘q. Uy egasi bilan bevosita aloqaga chiqing, vaqt va pulni tejang."
+                }
+              />
+
+              <List
+                icon={<PostAddOutlined fontSize="large" />}
+                title={"Bepul e’lon berish"}
+                desc={
+                  "Uy egasi sifatida hech qanday to‘lovsiz e’lon joylashtiring — 2 daqiqa kifoya."
+                }
+              />
+
+              <List
+                icon={<VerifiedUserOutlined fontSize="large" />}
+                title={"Faqat tekshirilgan e’lonlar"}
+                desc={
+                  " Har bir e’lon moderatsiyadan o‘tadi. Firibgarliklarga qarshi kafolatlangan muhit."
+                }
+              />
+
+              <List
+                icon={<AttachMoneyOutlined fontSize="large" />}
+                title={"Hech qanday 50% — adolatli narxlar"}
+                desc={
+                  "Oraliq xizmatlarsiz to‘g‘ridan-to‘g‘ri kelishuv. Haqiqiy narx, hech qanday yashirin to‘lov yo‘q."
+                }
+              />
+            </div>
           </div>
         </section>
       </main>
