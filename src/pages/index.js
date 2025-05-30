@@ -309,6 +309,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className="">
+          <div className="grid grid-cols-12 gap-4">
+            <Title>FAQ</Title>
+          </div>
+        </section>
       </main>
     </div>
   );
